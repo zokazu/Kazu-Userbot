@@ -38,7 +38,7 @@ def build_keyboards(buttons):
 Y_BUTTONS = [
         [
            custom.Button.url("Bᴏᴛ Sᴛʀɪɴɢ", "https://t.me/projectkazu"),
-           custom.Button.url("Rᴇᴘʟɪᴛ Sᴛʀɪɴɢ", "https://repl.it/@zokazu/stringdap_bot?lite=1&outputonly=1"),
+           custom.Button.url("Rᴇᴘʟɪᴛ Sᴛʀɪɴɢ", "https://repl.it/@AyiinXd/AyiinStringt?lite=1&outputonly=1"),
         ],
         [
            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/projectkazu"),
