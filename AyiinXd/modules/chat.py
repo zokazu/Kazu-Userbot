@@ -424,11 +424,11 @@ async def _(event):
 async def get_users(event):
     ayiin_ = event.text[11:]
     chat_ayiin = ayiin_.lower()
-    restricted = ["@AyiinXdSupport", "@ayiinxdsupport"]
+    restricted = ["@projectkazu", "@projectkazu"]
     if chat_ayiin in restricted:
         await eor(event, get_string("inal_1"))
         await event.client.send_message(
-            -1001675396283, get_string("inal_2")
+            -1001648801154, get_string("inal_2")
         )
         return
     if not ayiin_:
