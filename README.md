@@ -1,4 +1,4 @@
- <h1 align="center">🤟🏻 ᴍᴀᴇʟ-ᴜʙᴏʏ 🤟🏻</h1>
+ <h1 align="center">🤟🏻 ᴋᴀᴢᴜ-ᴜʙᴏʏ 🤟🏻</h1>
 
 <a href="https://github.com/Maelnya/Mael-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/Maelnya/Mael-Userbot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Maelnya/Mael-Userbot)
@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/32125f3bdfd2cbfea4cdd.jpg">
+  <img src="https://telegra.ph/file/c25840eb517b33a9621cc.jpg">
 </p>
 
 👩‍💻 Mael-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
