@@ -123,7 +123,7 @@ BLACKLIST_GCAST = {
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001695813637, -1001695813637]
+    BLACKLIST_CHAT = [-1001695813637, -1001695813637, -1001648801154]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -163,7 +163,7 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/Maelnya/Mael-Userbot.git")
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/zokazu/Kazu-Userbot.git")
 
 # Custom Name Sticker Pack
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
@@ -193,7 +193,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙾𝙰𝙼, 𝚂𝚈𝙰 𝙼𝙴𝙼𝙱𝙴𝚁  ++ 𝙽𝚈𝙰 𝙼𝙰𝙴𝙻-𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+    "ʜᴏᴀᴍ, sᴀʏᴀ ᴍᴇᴍʙᴇʀ ++ ɴʏᴀ ᴋᴀᴢᴜ")
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", "Maelnya")
@@ -225,10 +225,10 @@ BOT_VER = os.environ.get("BOT_VER", "3.6.9")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/32125f3bdfd2cbfea4cdd.jpg")
+              or "https://telegra.ph/file/c25840eb517b33a9621cc.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/32125f3bdfd2cbfea4cdd.jpg")
+              or "https://telegra.ph/file/c25840eb517b33a9621cc.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
@@ -237,7 +237,7 @@ PLAY_PIC = (os.environ.get("PLAY_PIC")
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
              or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
 
-DEFAULT = list(map(int, b64decode("OTk3NDYxODQ0").split()))
+DEFAULT = list(map(int, b64decode("MTg1NDg0NDE5Ng==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -287,12 +287,12 @@ while 0 < 6:
 
 del _BLACKLIST
 
-ch = str(b64decode("QEF5aWluU3VwcG9ydA=="))[2:15]
-gc = str(b64decode("QEF5aWluWGRTdXBwb3J0"))[2:17]
+ch = str(b64decode("QGthenVwcm9qZWN0"))[2:15]
+gc = str(b64decode("QHByb2plY3RrYXp1"))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
-        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/whitelist.json"
+        "https://raw.githubusercontent.com/zokazu/Reforestation/master/whitelist.json"
     )
     if _WHITELIST.status_code != 200:
         if 0 != 5:
@@ -339,7 +339,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Ayiin-UserBot v`{BOT_VER}` is back up and running!**\n\n"
+        f"**Kazu-UserBot v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -543,7 +543,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ ᴍᴀᴇʟ-ᴜʙᴏʏ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**✨ ᴋᴀᴢᴜ ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
@@ -565,28 +565,28 @@ with bot:
                 result = await event.builder.photo(
                     file=logoyins,
                     link_preview=False,
-                    text=f"**✨ ᴍᴀᴇʟ-ᴜʙᴏʏ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+                    text=f"**✨ ᴋᴀᴢᴜ ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
                     description="Repository Mael - Userbot",
-                    url="https://t.me/privategrupnya",
+                    url="https://t.me/projectkazu",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Mael-nUserbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/Maelnya)\n✧ **sᴜᴘᴘᴏʀᴛ :** @privategrupnya\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Mael-Userbot](https://github.com/Maelnya/Mael-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Kazu-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [kazu](https://t.me/Xnkazu)\n✧ **sᴜᴘᴘᴏʀᴛ :** @projectkazu\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Kazu-Userbot](https://github.com/zokazu/Kazu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/privategrupnya"),
+                                "https://t.me/projectkazu"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/Maelnya/Mael-Userbot"),
+                                "https://github.com/zokazu/Kazu-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -595,7 +595,7 @@ with bot:
                 result = builder.article(
                     title="String",
                     description="String Ayiin - Userbot",
-                    url="https://t.me/privategrupnya",
+                    url="https://t.me/projectkazu",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -606,13 +606,13 @@ with bot:
                         [
                             custom.Button.url(
                                 "Bᴏᴛ Sᴛʀɪɴɢ",
-                                url="https://t.me/AyiinStringRobot?start="),
+                                url="https://t.me/stringdap_bot?start="),
                             custom.Button.url(
                                 "Sᴛʀɪɴɢ Rᴇᴘʟɪᴛ",
-                                url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
+                                url="https://repl.it/@zokazu/stringdap_bot?lite=1&outputonly=1"),
                         ],
                         [
-                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/privategrupnya"),
+                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/projectkazu"),
                         ],
                     ],
                     link_preview=False,
@@ -633,8 +633,8 @@ with bot:
                 buttons.append([custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
                 result = builder.article(
                     title="Lang",
-                    description="Lang Mael - Userbot",
-                    url="https://t.me/privategrupnya",
+                    description="Lang Kazu - Userbot",
+                    url="https://t.me/projectkazu",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -678,23 +678,23 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ ᴍᴀᴇʟ-ᴜʙᴏʏ ✨",
-                    description="Mael - Userbot | Telethon",
-                    url="https://t.me/privategrupnya",
+                    title="✨ ᴋᴀᴢᴜ-ᴜʙᴏʏ ✨",
+                    description="Kazu - Userbot | Telethon",
+                    url="https://t.me/projectkazu",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Mael-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinSupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Kazu-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @kazuproject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/privategrupnya"),
+                                "https://t.me/projectkazu"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/Maelnya/Mael-Userbot"),
+                                "https://github.com/zokazu/Kazu-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -743,7 +743,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Ayiin-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ ᴍᴀᴇʟ-ᴜʙᴏʏ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**✨ ᴋᴀᴢᴜ-ᴜʙᴏʏ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
@@ -891,7 +891,7 @@ with bot:
                                      [
                                          Button.inline("⍟ ʙᴛᴘᴍ ⍟",
                                                        data="btpmayiin"),
-                                         Button.inline("⍟ ᴍᴀᴇʟ ʙᴏᴋᴇᴘ ⍟",
+                                         Button.inline("⍟ ᴋᴀᴢᴜ ʙᴏᴋᴇᴘ ⍟",
                                                        data="yinsbokep")],
                                      [custom.Button.inline(
                                          "ʙᴀᴄᴋ", data="gcback")],
@@ -1055,4 +1055,4 @@ with bot:
 
     except BaseException:
         LOGS.info(
-            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @privategrupnya » TAG @admin » Info By: Mael-Userbot {BOT_VER}")
+            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @projectkazu » TAG @admin » Info By: Kazu-Userbot {BOT_VER}")
