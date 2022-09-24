@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="ᴍᴀᴇʟ-ᴜʙᴏʏ Lᴏɢs",
-                about="» Group log Created by: Mael-Userbot\n\n» Support : @privategrupnya\n» Support: @crossuoy",
+                title="ᴋᴀƶᴜ-ᴜʙᴏʏ Lᴏɢs",
+                about="» Group log Created by: Kazu-Userbot\n\n» Support : @projectkazu\n» Support: @kazuproject",
                 megagroup=True,
             ),
         )
@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/32125f3bdfd2cbfea4cdd.jpg", "photoyins.jpg"
+            "https://telegra.ph/file/023ea603dee41f108a708.jpg", "photoyins.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -98,9 +98,9 @@ async def autobot():
     await bot.start()
     await asyncio.sleep(15)
     await bot.send_message(
-        BOTLOG_CHATID, "**SABAR KENTOD LAGI BUAT ASSISTANT BOT LU DI @BotFather**"
+        BOTLOG_CHATID, "**sᴀʙᴀʀ ʏᴀ., ʟᴀɢɪ ʙᴜᴀᴛ ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ ʟᴜ ᴅɪ @BotFather**"
     )
-    LOGS.info("TUNGGU SEBENTAR TOD. SEDANG MEMBUAT ASSISTANT BOT UNTUK ELU")
+    LOGS.info("sᴀʙᴀʀ ʏᴀ., ʟᴀɢɪ ʙᴜᴀᴛ ᴀssɪsᴛᴀɴᴛ ʙᴜᴀᴛ ʟᴜ ᴀɴᴊɪɴɢ")
     who = await bot.get_me()
     name = f"{who.first_name} Assistant Bot"
     if who.username:
@@ -135,7 +135,7 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://telegra.ph/file/32125f3bdfd2cbfea4cdd.jpg",
+              "https://telegra.ph/file/023ea603dee41f108a708.jpg",
               "AyiinXd/resources/logo.jpg",
           ]
     )
@@ -174,17 +174,17 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @crossouy ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @kazuproject ✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"**BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}**",
+                f"**ʙᴇʀʜᴀsɪʟ ᴍᴇᴍʙᴜᴀᴛ ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ ʟᴜ ᴅᴇɴɢᴀɴ ᴜsᴇʀɴᴀᴍᴇ @{username}**",
             )
             LOGS.info(
-                f"BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}")
+                f"ʙᴇʀʜᴀsɪʟ ᴍᴇᴍʙᴜᴀᴛ ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ ʟᴜ ᴅᴇɴɢᴀɴ ᴜsᴇʀɴᴀᴍᴇ @{username}")
             await bot.send_message(
                 BOTLOG_CHATID,
-                "**SEDANG MERESTART USERBOT HARAP TUNGGU KONTOL.**",
+                "**sᴇᴅᴀɴɢ ᴍᴇʀᴇsᴛᴀʀᴛ ʙᴏᴛᴜ ɴɢᴇᴛᴏᴛ sᴀʙᴀʀ...,**",
             )
             heroku_var["BOT_TOKEN"] = token
             heroku_var["BOT_USERNAME"] = f"@{username}"
@@ -218,17 +218,17 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @crossouy ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @kazuproject ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
-            f"**BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}**",
+            f"**ʙᴇʀʜᴀsɪʟ ᴍᴇᴍʙᴜᴀᴛ ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ ʟᴜ ᴅᴇɴɢᴀɴ ᴜsᴇʀɴᴀᴍᴇ @{username}**",
         )
         LOGS.info(
-            f"BERHASIL MEMBUAT ASSISTANT BOT DENGAN USERNAME @{username}")
+            f"sᴇᴅᴀɴɢ ᴍᴇʀᴇsᴛᴀʀᴛ ʙᴏᴛᴜ ɴɢᴇᴛᴏᴛ sᴀʙᴀʀ..., @{username}")
         await bot.send_message(
             BOTLOG_CHATID,
-            "**SEDANG MERESTART USERBOT HARAP TUNGGU KONTOL.**",
+            "**sᴇᴅᴀɴɢ ᴍᴇʀᴇsᴛᴀʀᴛ ʙᴏᴛᴜ ɴɢᴇᴛᴏᴛ sᴀʙᴀʀ...,**",
         )
         heroku_var["BOT_TOKEN"] = token
         heroku_var["BOT_USERNAME"] = f"@{username}"
